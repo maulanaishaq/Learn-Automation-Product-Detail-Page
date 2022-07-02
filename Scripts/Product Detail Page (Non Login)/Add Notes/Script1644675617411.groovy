@@ -27,9 +27,9 @@ WebUI.click(findTestObject('Page Detail Page/btn_Add Notes'))
 
 WebUI.setText(findTestObject('Page Detail Page/input_Notes'), 'Warna Putih Size L')
 
-WebUI.delay(2)
+WebUI.delay(3)
 
-WebUI.verifyTextPresent('Warna Putih Size L', false)
+WebUI.verifyElementPresent(findTestObject('Page Detail Page/Assert Value Notes'), 2)
 
 WebUI.closeBrowser()
 
